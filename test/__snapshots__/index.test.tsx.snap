@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index.ts should pass through components not registered in current namespace 1`] = `
+Array [
+  <div
+    className="a"
+  />,
+  <div
+    className="b"
+  />,
+  <div
+    className="c"
+  />,
+]
+`;
+
+exports[`index.ts should pass through components that are not replaced 1`] = `
+Array [
+  <div
+    className="a"
+  />,
+  <div
+    className="b"
+  />,
+  <div
+    className="c"
+  />,
+]
+`;
+
+exports[`index.ts should replace components replaced in registered namespace 1`] = `
+Array [
+  <div
+    className="a"
+  />,
+  <div
+    className="b"
+  />,
+  <div
+    className="c"
+  />,
+]
+`;
+
+exports[`index.ts should replace components replaced in registered namespace 2`] = `
+Array [
+  <div
+    className="b"
+  />,
+  <div
+    className="b"
+  />,
+  <div
+    className="c"
+  />,
+]
+`;
+
+exports[`index.ts should restore components no longer replaced on namespace change 1`] = `
+Array [
+  <div
+    className="a"
+  />,
+  <div
+    className="b"
+  />,
+  <div
+    className="c"
+  />,
+]
+`;
+
+exports[`index.ts should restore components no longer replaced on namespace change 2`] = `
+Array [
+  <div
+    className="b"
+  />,
+  <div
+    className="b"
+  />,
+  <div
+    className="c"
+  />,
+]
+`;
+
+exports[`index.ts should restore components no longer replaced on namespace change 3`] = `
+Array [
+  <div
+    className="a"
+  />,
+  <div
+    className="b"
+  />,
+  <div
+    className="c"
+  />,
+]
+`;
